@@ -11,7 +11,7 @@ import SwiftUI
 struct DoToday_iphoneApp: App {
     var body: some Scene {
         WindowGroup {
-            ToadyView(TodayChartData: weeklyStats)
+            //ToadyView(TodayChartData: weeklyStats)
         }
     }
 }

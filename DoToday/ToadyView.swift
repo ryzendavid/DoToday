@@ -12,6 +12,7 @@ struct ToadyView: View {
     
     var TodayChartData : [ChartsData]
     @AppStorage("userStreak") var userStreak = 0
+    @State var todayentryView = false
     
     var body: some View {
 
@@ -23,11 +24,22 @@ struct ToadyView: View {
                         .bold()
                         .font(.custom("Caacupe One", size: 35))
                     Spacer()
+                    
+                    Text("I Saw  *this Today")
+                        .bold()
+                        .font(.custom("Caacupe One", size: 40))
+                    
                     Image("train")
                         .resizable()
                         .frame(width: .infinity, height: 300)
                         .aspectRatio(contentMode: .fill)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
+                    
+                    Button{
+                        todayentryView = true
+                    }label: {
+                        Text("Enter entry")
+                    }
                     
                     Spacer()
                     
@@ -51,6 +63,9 @@ struct ToadyView: View {
                         .font(.custom("Caacupe One", size: 40))
                 }
                 .padding()
+                .sheet(isPresented: $todayentryView){
+                    UserEntryView()
+                }
                 
                 
             }
