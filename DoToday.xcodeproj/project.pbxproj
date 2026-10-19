@@ -21,47 +21,15 @@
 			remoteGlobalIDString = FA31178F304DC9B100D89A87;
 			remoteInfo = DoToday;
 		};
-		FA3117CB304DCACC00D89A87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA311788304DC9B100D89A87 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA3117BD304DCACA00D89A87;
-			remoteInfo = "DoToday-iphone";
-		};
-		FA3117D5304DCACC00D89A87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA311788304DC9B100D89A87 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA3117BD304DCACA00D89A87;
-			remoteInfo = "DoToday-iphone";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FA311790304DC9B100D89A87 /* DoToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA31179D304DC9B300D89A87 /* DoTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3117A7304DC9B300D89A87 /* DoTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3117BE304DCACA00D89A87 /* DoToday-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DoToday-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3117CA304DCACC00D89A87 /* DoToday-iphoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DoToday-iphoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3117D4304DCACC00D89A87 /* DoToday-iphoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DoToday-iphoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FA1662D03075AF170008C443 /* Exceptions for "DoToday" folder in "DoToday-iphone" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				MainTabView.swift,
-				some.swift,
-			);
-			target = FA3117BD304DCACA00D89A87 /* DoToday-iphone */;
-		};
-		FA3117F4305060B700D89A87 /* Exceptions for "DoToday-iphone" folder in "DoToday-iphone" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = FA3117BD304DCACA00D89A87 /* DoToday-iphone */;
-		};
 		FA3117F63050628700D89A87 /* Exceptions for "DoToday" folder in "DoToday" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -77,7 +45,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				FA3117F63050628700D89A87 /* Exceptions for "DoToday" folder in "DoToday" target */,
-				FA1662D03075AF170008C443 /* Exceptions for "DoToday" folder in "DoToday-iphone" target */,
 			);
 			path = DoToday;
 			sourceTree = "<group>";
@@ -94,9 +61,6 @@
 		};
 		FA3117BF304DCACA00D89A87 /* DoToday-iphone */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FA3117F4305060B700D89A87 /* Exceptions for "DoToday-iphone" folder in "DoToday-iphone" target */,
-			);
 			path = "DoToday-iphone";
 			sourceTree = "<group>";
 		};
@@ -134,27 +98,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA3117BB304DCACA00D89A87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3117C7304DCACC00D89A87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3117D1304DCACC00D89A87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -177,9 +120,6 @@
 				FA311790304DC9B100D89A87 /* DoToday.app */,
 				FA31179D304DC9B300D89A87 /* DoTodayTests.xctest */,
 				FA3117A7304DC9B300D89A87 /* DoTodayUITests.xctest */,
-				FA3117BE304DCACA00D89A87 /* DoToday-iphone.app */,
-				FA3117CA304DCACC00D89A87 /* DoToday-iphoneTests.xctest */,
-				FA3117D4304DCACC00D89A87 /* DoToday-iphoneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,74 +195,6 @@
 			productReference = FA3117A7304DC9B300D89A87 /* DoTodayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		FA3117BD304DCACA00D89A87 /* DoToday-iphone */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA3117DC304DCACC00D89A87 /* Build configuration list for PBXNativeTarget "DoToday-iphone" */;
-			buildPhases = (
-				FA3117BA304DCACA00D89A87 /* Sources */,
-				FA3117BB304DCACA00D89A87 /* Frameworks */,
-				FA3117BC304DCACA00D89A87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				FA3117BF304DCACA00D89A87 /* DoToday-iphone */,
-			);
-			name = "DoToday-iphone";
-			packageProductDependencies = (
-			);
-			productName = "DoToday-iphone";
-			productReference = FA3117BE304DCACA00D89A87 /* DoToday-iphone.app */;
-			productType = "com.apple.product-type.application";
-		};
-		FA3117C9304DCACC00D89A87 /* DoToday-iphoneTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA3117DF304DCACC00D89A87 /* Build configuration list for PBXNativeTarget "DoToday-iphoneTests" */;
-			buildPhases = (
-				FA3117C6304DCACC00D89A87 /* Sources */,
-				FA3117C7304DCACC00D89A87 /* Frameworks */,
-				FA3117C8304DCACC00D89A87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA3117CC304DCACC00D89A87 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				FA3117CD304DCACC00D89A87 /* DoToday-iphoneTests */,
-			);
-			name = "DoToday-iphoneTests";
-			packageProductDependencies = (
-			);
-			productName = "DoToday-iphoneTests";
-			productReference = FA3117CA304DCACC00D89A87 /* DoToday-iphoneTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FA3117D3304DCACC00D89A87 /* DoToday-iphoneUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA3117E2304DCACC00D89A87 /* Build configuration list for PBXNativeTarget "DoToday-iphoneUITests" */;
-			buildPhases = (
-				FA3117D0304DCACC00D89A87 /* Sources */,
-				FA3117D1304DCACC00D89A87 /* Frameworks */,
-				FA3117D2304DCACC00D89A87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA3117D6304DCACC00D89A87 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				FA3117D7304DCACC00D89A87 /* DoToday-iphoneUITests */,
-			);
-			name = "DoToday-iphoneUITests";
-			packageProductDependencies = (
-			);
-			productName = "DoToday-iphoneUITests";
-			productReference = FA3117D4304DCACC00D89A87 /* DoToday-iphoneUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -344,17 +216,6 @@
 						CreatedOnToolsVersion = 26.0.1;
 						TestTargetID = FA31178F304DC9B100D89A87;
 					};
-					FA3117BD304DCACA00D89A87 = {
-						CreatedOnToolsVersion = 26.0.1;
-					};
-					FA3117C9304DCACC00D89A87 = {
-						CreatedOnToolsVersion = 26.0.1;
-						TestTargetID = FA3117BD304DCACA00D89A87;
-					};
-					FA3117D3304DCACC00D89A87 = {
-						CreatedOnToolsVersion = 26.0.1;
-						TestTargetID = FA3117BD304DCACA00D89A87;
-					};
 				};
 			};
 			buildConfigurationList = FA31178B304DC9B100D89A87 /* Build configuration list for PBXProject "DoToday" */;
@@ -374,9 +235,6 @@
 				FA31178F304DC9B100D89A87 /* DoToday */,
 				FA31179C304DC9B300D89A87 /* DoTodayTests */,
 				FA3117A6304DC9B300D89A87 /* DoTodayUITests */,
-				FA3117BD304DCACA00D89A87 /* DoToday-iphone */,
-				FA3117C9304DCACC00D89A87 /* DoToday-iphoneTests */,
-				FA3117D3304DCACC00D89A87 /* DoToday-iphoneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -397,27 +255,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FA3117A5304DC9B300D89A87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3117BC304DCACA00D89A87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3117C8304DCACC00D89A87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3117D2304DCACC00D89A87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,27 +285,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA3117BA304DCACA00D89A87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3117C6304DCACC00D89A87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3117D0304DCACC00D89A87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -481,16 +297,6 @@
 			isa = PBXTargetDependency;
 			target = FA31178F304DC9B100D89A87 /* DoToday */;
 			targetProxy = FA3117A8304DC9B300D89A87 /* PBXContainerItemProxy */;
-		};
-		FA3117CC304DCACC00D89A87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA3117BD304DCACA00D89A87 /* DoToday-iphone */;
-			targetProxy = FA3117CB304DCACC00D89A87 /* PBXContainerItemProxy */;
-		};
-		FA3117D6304DCACC00D89A87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA3117BD304DCACA00D89A87 /* DoToday-iphone */;
-			targetProxy = FA3117D5304DCACC00D89A87 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -777,169 +583,6 @@
 			};
 			name = Release;
 		};
-		FA3117DD304DCACC00D89A87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 32Y9M83562;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DoToday-iphone/Info.plist";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "david.com.DoToday-iphone";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FA3117DE304DCACC00D89A87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 32Y9M83562;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DoToday-iphone/Info.plist";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "david.com.DoToday-iphone";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FA3117E0304DCACC00D89A87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 32Y9M83562;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "david.com.DoToday-iphoneTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoToday-iphone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoToday-iphone";
-			};
-			name = Debug;
-		};
-		FA3117E1304DCACC00D89A87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 32Y9M83562;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "david.com.DoToday-iphoneTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoToday-iphone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoToday-iphone";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FA3117E3304DCACC00D89A87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 32Y9M83562;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "david.com.DoToday-iphoneUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "DoToday-iphone";
-			};
-			name = Debug;
-		};
-		FA3117E4304DCACC00D89A87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 32Y9M83562;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "david.com.DoToday-iphoneUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "DoToday-iphone";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -975,33 +618,6 @@
 			buildConfigurations = (
 				FA3117B8304DC9B300D89A87 /* Debug */,
 				FA3117B9304DC9B300D89A87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA3117DC304DCACC00D89A87 /* Build configuration list for PBXNativeTarget "DoToday-iphone" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA3117DD304DCACC00D89A87 /* Debug */,
-				FA3117DE304DCACC00D89A87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA3117DF304DCACC00D89A87 /* Build configuration list for PBXNativeTarget "DoToday-iphoneTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA3117E0304DCACC00D89A87 /* Debug */,
-				FA3117E1304DCACC00D89A87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA3117E2304DCACC00D89A87 /* Build configuration list for PBXNativeTarget "DoToday-iphoneUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA3117E3304DCACC00D89A87 /* Debug */,
-				FA3117E4304DCACC00D89A87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
