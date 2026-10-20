@@ -13,16 +13,17 @@ struct UserEntryView: View {
     @State private var txtField = ""
     @State private var SelectedphotoPicker : PhotosPickerItem?
     @State private var SelectedTodayImage : Image?
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         NavigationStack{
             VStack{
 //                Text("Hey, *Name what did you do today that made you happy")
                 
-                TextField("Describe what you did in a few phrases", text: $txtField)
+                TextField("Describe what you did in a few phrases", text: $txtField, axis: .vertical)
                     .padding()
-                
-                Text("Did you get any photos? add them here")
+                    .lineLimit(5)
                 
                 //add this to the button
                 
@@ -30,16 +31,22 @@ struct UserEntryView: View {
                     if let TodayImage = SelectedTodayImage{
                         TodayImage
                             .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 14))
-                            .padding()
-                            .frame(width: .infinity, height: 320)
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 10)
+                            .frame(width: .infinity, height: 310)
                             
                             
                             
                     }else{
-                        Image(systemName: "photo.badge.plus")
-                            .font(.system(size: 150))
-                            .padding()
+                        VStack{
+                            Text("Did you get any photos? add them here")
+                                .foregroundStyle(Color.primary)
+                            
+                            Image(systemName: "photo.badge.plus")
+                                .font(.system(size: 150))
+                                .padding()
+                        }
                     }
                 }
                 
@@ -73,6 +80,18 @@ struct UserEntryView: View {
                 }
             }
             .font(.custom("Caacupe One", size: 25))
+            .toolbar{
+                ToolbarItem(placement: .cancellationAction){
+                    Button("Cancel"){
+                        dismiss()
+                    }
+                }
+                ToolbarItem(placement: .confirmationAction){
+                    Button("Save Entry"){
+                        
+                    }
+                }
+            }
         }
     }
 }
