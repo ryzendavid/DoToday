@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct DoTodayApp: App {
@@ -13,5 +14,6 @@ struct DoTodayApp: App {
         WindowGroup {
             ToadyView(TodayChartData: weeklyStats)
         }
+        .modelContainer(for: SettingsModel.self)
     }
 }
