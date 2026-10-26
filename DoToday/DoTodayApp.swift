@@ -12,7 +12,7 @@ import SwiftData
 struct DoTodayApp: App {
     var body: some Scene {
         WindowGroup {
-            ToadyView(TodayChartData: weeklyStats)
+            MainTabView(settingBlurToggle: .constant(false))
         }
         .modelContainer(for: SettingsModel.self)
     }

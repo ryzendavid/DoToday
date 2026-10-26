@@ -16,6 +16,9 @@ struct UserEntryView: View {
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.dismiss) var dismiss
     
+    //State to dismiss keyboard
+    @FocusState private var isFocused : Bool
+    
     var body: some View {
         NavigationStack{
             VStack{
@@ -24,6 +27,20 @@ struct UserEntryView: View {
                 TextField("Describe what you did in a few phrases", text: $txtField, axis: .vertical)
                     .padding()
                     .lineLimit(5)
+                    .scrollDismissesKeyboard(.immediately)
+                    .focused($isFocused)
+                    .toolbar{
+                        ToolbarItemGroup(placement: .keyboard){
+                            Spacer()
+                                Button{
+                                    isFocused = false
+                                }label: {
+                                    Text("Done")
+                                }.buttonStyle(.glassProminent)
+                            
+                        }
+                    }
+                
                 
                 //add this to the button
                 
@@ -31,9 +48,9 @@ struct UserEntryView: View {
                     if let TodayImage = SelectedTodayImage{
                         TodayImage
                             .resizable()
+                            .aspectRatio(contentMode: .fill)
                             .clipShape(RoundedRectangle(cornerRadius: 15))
-                            .padding(.horizontal, 6)
-                            .padding(.vertical, 10)
+                            
                             .frame(width: .infinity, height: 310)
                             
                             
@@ -71,6 +88,7 @@ struct UserEntryView: View {
                 }
                 Spacer()
             }
+            .padding()
             .onChange(of: SelectedphotoPicker){
                 Task{
                     if let data = try? await SelectedphotoPicker?.loadTransferable(type: Data.self),

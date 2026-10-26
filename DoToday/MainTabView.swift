@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    @State var backgroundColor : Color = .white
+    @Binding var settingBlurToggle : Bool
+    
     var body: some View {
         TabView(){
             Tab("Today", systemImage: "doc.text.image"){
@@ -17,10 +21,14 @@ struct MainTabView: View {
             Tab("Profile", systemImage: "person.and.background.striped.horizontal"){
                 UserProfile_View()
             }
+            
+            Tab("Settings",systemImage: "gear"){
+                    SettingsView(backgroundColor: $backgroundColor, settingBlurToggle: settingBlurToggle)
+                }
         }
     }
 }
 
 #Preview {
-    MainTabView()
+    MainTabView(settingBlurToggle: .constant(false))
 }
