@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PhotosUI
+import SwiftData
 
 struct UserEntryView: View {
     
@@ -18,6 +19,9 @@ struct UserEntryView: View {
     
     //State to dismiss keyboard
     @FocusState private var isFocused : Bool
+    
+    //context (swift data)
+    @Environment(\.modelContext) var context
     
     var body: some View {
         NavigationStack{

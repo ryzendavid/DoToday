@@ -16,3 +16,8 @@ struct Settings_View: View {
 #Preview {
     Settings_View()
 }
+
+
+// list in card view (this will contain all entries)
+// dedicated button for entry view..
+
