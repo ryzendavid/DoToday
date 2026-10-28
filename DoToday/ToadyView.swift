@@ -13,6 +13,8 @@ struct ToadyView: View {
     var TodayChartData : [ChartsData]
     @AppStorage("userStreak") var userStreak = 0
     @State var todayentryView = false
+    //var EntryModel = 
+    
     
     var body: some View {
 
@@ -20,20 +22,10 @@ struct ToadyView: View {
         NavigationStack{
             ScrollView{
                 VStack (alignment: .leading){
-                    Text("Hello *name what have you done today?")
-                        .bold()
-                        .font(.custom("Caacupe One", size: 35))
-                    Spacer()
                     
-                    Text("I Saw  *this Today")
-                        .bold()
-                        .font(.custom("Caacupe One", size: 40))
-                    
-                    Image("train")
-                        .resizable()
-                        .frame(width: .infinity, height: 300)
-                        .aspectRatio(contentMode: .fill)
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                    //call todayCardView
+                    TodayCardView()
+        
                     
                     Button{
                         todayentryView = true
@@ -76,4 +68,28 @@ struct ToadyView: View {
 
 #Preview {
     ToadyView(TodayChartData: weeklyStats)
+}
+
+
+// defines today card view
+struct TodayCardView : View {
+    var number = ["Hello", "hey", "goof"]
+    var body : some View{
+        VStack(alignment: .leading){
+            Text("I Saw  *this Today")
+                .bold()
+                .font(.custom("Caacupe One", size: 40))
+            
+            Image("train")
+                .resizable()
+                .frame(width: .infinity, height: 300)
+                .aspectRatio(contentMode: .fill)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+            
+            ForEach(number, id: \.self){ num in
+                Text(num)
+            }
+        }
+        
+    }
 }

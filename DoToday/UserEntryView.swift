@@ -104,16 +104,19 @@ struct UserEntryView: View {
             .font(.custom("Caacupe One", size: 25))
             .toolbar{
                 ToolbarItem(placement: .cancellationAction){
-                    Button("Cancel"){
+                    Button("Cancel", role: .cancel){
                         dismiss()
                     }
+                    .foregroundStyle(.red)
                 }
                 ToolbarItem(placement: .confirmationAction){
                     Button("Save Entry"){
                         
                     }
+                    .buttonStyle(.glassProminent)
                 }
             }
+            .font(.custom("Caacupe One", size: 25))
         }
     }
 }
