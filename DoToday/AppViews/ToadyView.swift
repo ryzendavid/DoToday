@@ -13,7 +13,7 @@ struct ToadyView: View {
     var TodayChartData : [ChartsData]
     @AppStorage("userStreak") var userStreak = 0
     @State var todayentryView = false
-    //var EntryModel = 
+    @State private var TodayEntry : [DailyEntry] = []
     
     
     var body: some View {
@@ -24,7 +24,12 @@ struct ToadyView: View {
                 VStack (alignment: .leading){
                     
                     //call todayCardView
-                    TodayCardView()
+                    
+                    ForEach(TodayEntry){ Entry in
+                        TodayCardView(entry: Entry)
+                    }
+                    
+                    //TodayCardView()
         
                     
                     Button{
@@ -73,14 +78,16 @@ struct ToadyView: View {
 
 // defines today card view
 struct TodayCardView : View {
+    var entry : DailyEntry
     var number = ["Hello", "hey", "goof"]
+    
     var body : some View{
         VStack(alignment: .leading){
-            Text("I Saw  *this Today")
+            Text(entry.title)
                 .bold()
                 .font(.custom("Caacupe One", size: 40))
             
-            Image("train")
+            Image(entry.image)
                 .resizable()
                 .frame(width: .infinity, height: 300)
                 .aspectRatio(contentMode: .fill)

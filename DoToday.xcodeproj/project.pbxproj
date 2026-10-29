@@ -46,30 +46,6 @@
 			);
 			target = FA31178F304DC9B100D89A87 /* DoToday */;
 		};
-		FA60960730896D8B00B5FC62 /* Exceptions for "Model" folder in "DoToday" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				SettingsModel.swift,
-			);
-			target = FA31178F304DC9B100D89A87 /* DoToday */;
-		};
-		FA77E319308966D70087E4A6 /* Exceptions for "App_Views" folder in "DoToday" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Settings_View.swift,
-				SettingsView.swift,
-			);
-			target = FA31178F304DC9B100D89A87 /* DoToday */;
-		};
-		FAF2DFF1309196F600E1891A /* Exceptions for "Secrets" folder in "DoToday" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Config.xcconfig,
-				SupabaseClient.swift,
-				SupabaseSecret.swift,
-			);
-			target = FA31178F304DC9B100D89A87 /* DoToday */;
-		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -89,45 +65,6 @@
 		FA3117AA304DC9B300D89A87 /* DoTodayUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DoTodayUITests;
-			sourceTree = "<group>";
-		};
-		FA3117BF304DCACA00D89A87 /* DoToday-iphone */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DoToday-iphone";
-			sourceTree = "<group>";
-		};
-		FA3117CD304DCACC00D89A87 /* DoToday-iphoneTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DoToday-iphoneTests";
-			sourceTree = "<group>";
-		};
-		FA3117D7304DCACC00D89A87 /* DoToday-iphoneUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DoToday-iphoneUITests";
-			sourceTree = "<group>";
-		};
-		FA77E316308966C10087E4A6 /* App_Views */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FA77E319308966D70087E4A6 /* Exceptions for "App_Views" folder in "DoToday" target */,
-			);
-			path = App_Views;
-			sourceTree = "<group>";
-		};
-		FA77E37D308968000087E4A6 /* Model */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FA60960730896D8B00B5FC62 /* Exceptions for "Model" folder in "DoToday" target */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FAF2DFEE309196E700E1891A /* Secrets */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FAF2DFF1309196F600E1891A /* Exceptions for "Secrets" folder in "DoToday" target */,
-			);
-			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -166,16 +103,10 @@
 		FA311787304DC9B100D89A87 = {
 			isa = PBXGroup;
 			children = (
-				FAF2DFEE309196E700E1891A /* Secrets */,
-				FA77E316308966C10087E4A6 /* App_Views */,
 				FA311792304DC9B100D89A87 /* DoToday */,
 				FA3117A0304DC9B300D89A87 /* DoTodayTests */,
 				FA3117AA304DC9B300D89A87 /* DoTodayUITests */,
-				FA3117BF304DCACA00D89A87 /* DoToday-iphone */,
-				FA3117CD304DCACC00D89A87 /* DoToday-iphoneTests */,
-				FA3117D7304DCACC00D89A87 /* DoToday-iphoneUITests */,
 				FA311791304DC9B100D89A87 /* Products */,
-				FA77E37D308968000087E4A6 /* Model */,
 			);
 			sourceTree = "<group>";
 		};

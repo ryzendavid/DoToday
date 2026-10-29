@@ -9,4 +9,4 @@ import Foundation
 import Supabase
 
 // supabase client
-let Supabase = SupabaseClient(supabaseURL: URL(string: SupaSecret.projectURL)!, supabaseKey: SupaSecret.apiKey)
+let supabase = SupabaseClient(supabaseURL: SupaSecret.projectURL, supabaseKey: SupaSecret.apiKey)

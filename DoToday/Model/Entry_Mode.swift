@@ -7,13 +7,14 @@
 
 import Foundation
 
-struct DailyEntry : Identifiable{
+struct DailyEntry : Identifiable, Codable, Hashable{
     let id : UUID
     var title : String
     var body : String
     var isHappy : Bool
     var createdAt : Date
     var userId : UUID
+    var image : String
     
     enum CodingKeys : String, CodingKey{
         case id
@@ -22,5 +23,6 @@ struct DailyEntry : Identifiable{
         case isHappy = "is_happy"
         case createdAt = "created_at"
         case userId = "user_id"
+        case image = "entry_image"
     }
 }

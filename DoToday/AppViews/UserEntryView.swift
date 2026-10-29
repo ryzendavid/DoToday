@@ -23,6 +23,8 @@ struct UserEntryView: View {
     //context (swift data)
     @Environment(\.modelContext) var context
     
+    @State var entry :[DailyEntry] = []
+    
     var body: some View {
         NavigationStack{
             VStack{
@@ -118,6 +120,12 @@ struct UserEntryView: View {
             }
             .font(.custom("Caacupe One", size: 25))
         }
+    }
+    
+    //save/upload entry
+    
+    func saveEntry() {
+        
     }
 }
 
